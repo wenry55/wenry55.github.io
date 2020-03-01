@@ -1,5 +1,6 @@
 title: BNJ 
-description: Slate is a theme for GitHub Pages.
+description: log from bk, not to re-study.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+permalink: /:categories/:title/
