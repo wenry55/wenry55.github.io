@@ -1,0 +1,64 @@
+I"4<div id="archives">
+
+  <div class="archive-group">
+    
+    <div id="#howto"></div>
+    <p></p>
+
+    <h3 class="category-head">howto</h3>
+    <a name="howto"></a>
+    
+    <article class="archive-item">
+      <h4><a href="/jekyll/howto/using-jekyll/">Using Jekyll</a></h4>
+    </article>
+    
+    <article class="archive-item">
+      <h4><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></h4>
+    </article>
+    
+  </div>
+
+  <div class="archive-group">
+    
+    <div id="#tech"></div>
+    <p></p>
+
+    <h3 class="category-head">tech</h3>
+    <a name="tech"></a>
+    
+    <article class="archive-item">
+      <h4><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></h4>
+    </article>
+    
+  </div>
+
+  <div class="archive-group">
+    
+    <div id="#markdown"></div>
+    <p></p>
+
+    <h3 class="category-head">markdown</h3>
+    <a name="markdown"></a>
+    
+    <article class="archive-item">
+      <h4><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></h4>
+    </article>
+    
+  </div>
+
+  <div class="archive-group">
+    
+    <div id="#jekyll"></div>
+    <p></p>
+
+    <h3 class="category-head">jekyll</h3>
+    <a name="jekyll"></a>
+    
+    <article class="archive-item">
+      <h4><a href="/jekyll/howto/using-jekyll/">Using Jekyll</a></h4>
+    </article>
+    
+  </div>
+
+</div>
+:ET
