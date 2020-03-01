@@ -1,0 +1,108 @@
+I"p	<h1 id="안녕하세요">안녕하세요?</h1>
+
+<h3>howto</h3>
+<ul>
+    
+      <li><a href="/jekyll/howto/using-jekyll/">Using Jekyll</a></li>
+    
+      <li><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></li>
+    
+  </ul>
+
+<h3>tech</h3>
+<ul>
+    
+      <li><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></li>
+    
+  </ul>
+
+<h3>markdown</h3>
+<ul>
+    
+      <li><a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a></li>
+    
+  </ul>
+
+<h3>jekyll</h3>
+<ul>
+    
+      <li><a href="/jekyll/howto/using-jekyll/">Using Jekyll</a></li>
+    
+  </ul>
+
+<h3>programming</h3>
+<ul>
+    
+      <li><a href="/programming/javascript/vue/vue/">Vue.JS</a></li>
+    
+      <li><a href="/programming/javascript/javascript/">one more thing about javascript</a></li>
+    
+  </ul>
+
+<h3>javascript</h3>
+<ul>
+    
+      <li><a href="/programming/javascript/vue/vue/">Vue.JS</a></li>
+    
+      <li><a href="/programming/javascript/javascript/">one more thing about javascript</a></li>
+    
+  </ul>
+
+<h3>kubernetes</h3>
+<ul>
+    
+      <li><a href="/kubernetes/k8s/">k8s</a></li>
+    
+  </ul>
+
+<h3>vue</h3>
+<ul>
+    
+      <li><a href="/programming/javascript/vue/vue/">Vue.JS</a></li>
+    
+  </ul>
+
+<ul>
+  
+    <li>
+      <a href="/programming/javascript/vue/vue/">Vue.JS</a>
+    </li>
+  
+    <li>
+      <a href="/kubernetes/k8s/">k8s</a>
+    </li>
+  
+    <li>
+      <a href="/programming/javascript/javascript/">one more thing about javascript</a>
+    </li>
+  
+    <li>
+      <a href="/jekyll/howto/using-jekyll/">Using Jekyll</a>
+    </li>
+  
+    <li>
+      <a href="/new-arrive/">God is with us!</a>
+    </li>
+  
+    <li>
+      <a href="/howto/tech/markdown/jekyll-howto/">지킬 사용하기</a>
+    </li>
+  
+</ul>
+
+<h3 id="categories">categories</h3>
+
+<p>front matter에 추가하였으나 나타나지 않거나, 페이지가 보이지 않는 경우.
+위의 부분은 _pages 디렉토리 아래에 categories.html을 만들고 나서 부터는 이상없이 보이는 것 같네요.</p>
+
+<h3 id="front-matter--신발장앞에-있는-매트">front matter … 신발장앞에 있는 매트?</h3>
+
+<p>어떤 파일이든지 프런트매터 블럭을 포함하는 경우, 지킬이 이를 프로세스 합니다.</p>
+
+<h4 id="pages">pages</h4>
+
+<p>페이지는 어디에 저장해야 하나요?</p>
+
+<p>포스트는 _posts, 그러므로 페이지는 _pages가 아닐까요?</p>
+
+:ET
