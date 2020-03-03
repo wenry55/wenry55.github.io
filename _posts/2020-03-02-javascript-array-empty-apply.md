@@ -1,59 +1,46 @@
 ---
 layout: default
-title: javascript apply syntax
+title: javascript empty array and apply function
 categories: [programming, javascript]
-tags: [javascript, syntax, apply]
+tags: [javascript, syntax, apply, array, empty-array, fill]
 ---
+## 길이 n인 어레이의 생성 및 초기화
 
-# apply
-##### invoke a function as a method of an object
+### when
 
->이 함수는 함수형 오브젝트를 파라메터로 주어진 오브젝트의 메서드로 적용한다는 뜻으로 이해하면 될 것 같습니다.
-만약 주어진 오브젝트가 null 일 경우, this는 global object를 지칭하게 됩니다.
+when to generate `n-length` size array and `loop` with it.
 
->한편으로 다르게 생각해 보면, 오브젝트와 메서드가 분리되어 있는 형태라고도 생각해 볼 수 있을것 같습니다.
+### base
 
-#### Synopsis
-
-function.apply(thisobj, args)
-
-#### Arguments
-`thisobj`
-
-The object to which function is to be applied. In the body of the function, thisobj becomes the value of the `this` keyword. If this argument is `null`, the global object is used.
-
-The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).
-
-> Note: While the syntax of this function is almost identical to that of > call(), the fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
-
-> Note: When the first argument is undefined or null a similar outcome can > be achieved using the array spread syntax.
+Array 클래스는 두개의 컨스트럭터를 가지고 있다.
 
 ```js
-var person = {
-  fullName: function() {
-    return this.firstName + " " + this.lastName;
-  }
-}
-var person1 = {
-  firstName: "Mary",
-  lastName: "Doe"
-}
-person.fullName.apply(person1);  // Will return "Mary Doe"
+Array(n) // creates [], with a length of n.
+// vs
+Array(a, b, c) // creates [a, b, c], length is 3
 ```
 
+위의 어레이중, empty array가 다른 함수의 파라메터로 넘어갈 때 캐스팅이 발생되는데, 
+이 때 undefined 값으로 설정된 어레이로 캐스팅 된다.
 
-먼저 apply 함수를 살펴보면,
-이 함수는 한 오브젝트에서 정의한 함수형 오브젝트를 다른 오브젝트에 대해서 사용할 수 있도록 한다.
-첫번재 파라메터는 이 함수를 적용할 오브젝트이고, 다음 파라메터들은 이 함수를 호출할 때 사용되는 파라메터 어레이를 지정한다.
+```js
+Array(n) => Array([undefined, undefined, ..., undefined(n th)])
+```
 
-* Array(5) gives you an array with length 5 but no values, hence you can't iterate over it.
+이를 배경으로 깔고 아래의 글들을 보면 보다 이해하기 쉬울겁니다.  
+
+>
+>* Array(5) gives you an array with length 5 but no values, hence you can't iterate over it.
 * Array.apply(null, Array(5)).map(function () {}) gives you an array with length 5 and undefined as values, now it can be iterated over.
 * Array.apply(null, Array(5)).map(function (x, i) { return i; }) gives you an array with length 5 and values 0,1,2,3,4.
 * Array(5).forEach(alert) does nothing, Array.apply(null, Array(5)).forEach(alert) gives you 5 alerts
-* ES6 gives us Array.from so now you can also use Array.from(Array(5)).forEach(alert)
+* ES6 gives us Array.from so now you can also use Array.from(Array(5)).forEach(alert) => 강추!
 * If you want to initialize with a certain value, these are good to knows...
 Array.from('abcde'), Array.from('x'.repeat(5))
 or Array.from({length: 5}, (v, i) => i)   // gives [0, 1, 2, 3, 4]
+
+이와 관련한 글을 다음에 링크하였으니, 시간날 때 한번 더 보면 좋을것 같습니다.
+
 
 [Difference between Array.apply(null, Array(x)) and Array(x)](https://stackoverflow.com/questions/28416547/difference-between-array-applynull-arrayx-and-arrayx)
 
