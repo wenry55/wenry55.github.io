@@ -1,0 +1,112 @@
+I"³9<blockquote>
+  <p>xaxis</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">xaxis:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">type:</span><span class="w"> </span><span class="err">'category'</span><span class="p">,</span><span class="w">
+      </span><span class="err">categories:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="err">labels:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">show:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">rotate:</span><span class="w"> </span><span class="mi">-45</span><span class="p">,</span><span class="w">
+          </span><span class="err">rotateAlways:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+          </span><span class="err">hideOverlappingLabels:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">showDuplicates:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+          </span><span class="err">trim:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+          </span><span class="err">minHeight:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+          </span><span class="err">maxHeight:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w">
+          </span><span class="err">style:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">colors:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+              </span><span class="err">fontSize:</span><span class="w"> </span><span class="err">'</span><span class="mi">12</span><span class="err">px'</span><span class="p">,</span><span class="w">
+              </span><span class="err">fontFamily:</span><span class="w"> </span><span class="err">'Helvetica</span><span class="p">,</span><span class="w"> </span><span class="err">Arial</span><span class="p">,</span><span class="w"> </span><span class="err">sans-serif'</span><span class="p">,</span><span class="w">
+              </span><span class="err">fontWeight:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+              </span><span class="err">cssClass:</span><span class="w"> </span><span class="err">'apexcharts-xaxis-label'</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="err">offsetX:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetY:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">format:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+          </span><span class="err">formatter:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+          </span><span class="err">datetimeUTC:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">datetimeFormatter:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">year:</span><span class="w"> </span><span class="err">'yyyy'</span><span class="p">,</span><span class="w">
+              </span><span class="err">month:</span><span class="w"> </span><span class="s2">"MMM 'yy"</span><span class="p">,</span><span class="w">
+              </span><span class="err">day:</span><span class="w"> </span><span class="err">'dd</span><span class="w"> </span><span class="err">MMM'</span><span class="p">,</span><span class="w">
+              </span><span class="err">hour:</span><span class="w"> </span><span class="err">'HH:mm'</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">axisBorder:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">show:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">color:</span><span class="w"> </span><span class="err">'#</span><span class="mi">78909</span><span class="err">C'</span><span class="p">,</span><span class="w">
+          </span><span class="err">height:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="err">width:</span><span class="w"> </span><span class="err">'</span><span class="mi">100</span><span class="err">%'</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetX:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetY:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">axisTicks:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">show:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">borderType:</span><span class="w"> </span><span class="err">'solid'</span><span class="p">,</span><span class="w">
+          </span><span class="err">color:</span><span class="w"> </span><span class="err">'#</span><span class="mi">78909</span><span class="err">C'</span><span class="p">,</span><span class="w">
+          </span><span class="err">height:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetX:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetY:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">tickAmount:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+      </span><span class="err">tickPlacement:</span><span class="w"> </span><span class="err">'between'</span><span class="p">,</span><span class="w">
+      </span><span class="err">min:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+      </span><span class="err">max:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+      </span><span class="err">range:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+      </span><span class="err">floating:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="err">position:</span><span class="w"> </span><span class="err">'bottom'</span><span class="p">,</span><span class="w">
+      </span><span class="err">title:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">text:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetX:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetY:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">style:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">color:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+              </span><span class="err">fontSize:</span><span class="w"> </span><span class="err">'</span><span class="mi">12</span><span class="err">px'</span><span class="p">,</span><span class="w">
+              </span><span class="err">fontFamily:</span><span class="w"> </span><span class="err">'Helvetica</span><span class="p">,</span><span class="w"> </span><span class="err">Arial</span><span class="p">,</span><span class="w"> </span><span class="err">sans-serif'</span><span class="p">,</span><span class="w">
+              </span><span class="err">fontWeight:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span><span class="w">
+              </span><span class="err">cssClass:</span><span class="w"> </span><span class="err">'apexcharts-xaxis-title'</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">crosshairs:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">show:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">width:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="err">position:</span><span class="w"> </span><span class="err">'back'</span><span class="p">,</span><span class="w">
+          </span><span class="err">opacity:</span><span class="w"> </span><span class="mf">0.9</span><span class="p">,</span><span class="w">        
+          </span><span class="err">stroke:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">color:</span><span class="w"> </span><span class="err">'#b</span><span class="mi">6</span><span class="err">b</span><span class="mi">6</span><span class="err">b</span><span class="mi">6</span><span class="err">'</span><span class="p">,</span><span class="w">
+              </span><span class="err">width:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+              </span><span class="err">dashArray:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="err">fill:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">type:</span><span class="w"> </span><span class="err">'solid'</span><span class="p">,</span><span class="w">
+              </span><span class="err">color:</span><span class="w"> </span><span class="err">'#B</span><span class="mi">1</span><span class="err">B</span><span class="mi">9</span><span class="err">C</span><span class="mi">4</span><span class="err">'</span><span class="p">,</span><span class="w">
+              </span><span class="err">gradient:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="err">colorFrom:</span><span class="w"> </span><span class="err">'#D</span><span class="mi">8E3</span><span class="err">F</span><span class="mi">0</span><span class="err">'</span><span class="p">,</span><span class="w">
+                  </span><span class="err">colorTo:</span><span class="w"> </span><span class="err">'#BED</span><span class="mi">1E6</span><span class="err">'</span><span class="p">,</span><span class="w">
+                  </span><span class="err">stops:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">],</span><span class="w">
+                  </span><span class="err">opacityFrom:</span><span class="w"> </span><span class="mf">0.4</span><span class="p">,</span><span class="w">
+                  </span><span class="err">opacityTo:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">
+              </span><span class="p">},</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="err">dropShadow:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="err">enabled:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+              </span><span class="err">top:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+              </span><span class="err">left:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+              </span><span class="err">blur:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+              </span><span class="err">opacity:</span><span class="w"> </span><span class="mf">0.4</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="err">tooltip:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">enabled:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="err">formatter:</span><span class="w"> </span><span class="err">undefined</span><span class="p">,</span><span class="w">
+          </span><span class="err">offsetY:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="err">style:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="err">fontSize:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="err">fontFamily:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+:ET

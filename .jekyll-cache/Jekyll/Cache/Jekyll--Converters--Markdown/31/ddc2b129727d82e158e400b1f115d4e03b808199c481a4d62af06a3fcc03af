@@ -1,0 +1,61 @@
+I"Ô<h5 id="vue">Vue</h5>
+
+<p><a href="https://stackoverflow.com/questions/42722433/accessing-props-in-vue-component-data-function">Accessing props in vue component data function</a></p>
+
+<p>Note that this does not work if you are using an arrow function for assigning your data:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">data</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="na">somevar</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">messageId</span> <span class="c1">// undefined</span>
+<span class="p">}),</span>
+</code></pre></div></div>
+
+<p>Because this will not point to the component. Instead, use a plain function:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">data</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span> <span class="na">somevar</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">messageId</span> <span class="p">}</span>
+<span class="p">},</span>
+</code></pre></div></div>
+<p>or using ES6 object method shorthand as Siva Tumma suggested:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span> <span class="na">somevar</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">messageId</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="https://stackoverflow.com/questions/48980865/vue-js-difference-of-data-return-vs-data">vue js difference of data return</a></p>
+
+<p>Fix
+Change the arrow function to, either (ES6/EcmaScript 2015 notation):</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="p">{</span>
+    <span class="na">props</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">stuffProp</span><span class="dl">'</span><span class="p">],</span>
+    <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>                                   <span class="c1">// &lt;== changed this line</span>
+      <span class="k">return</span> <span class="p">{</span>
+        <span class="na">myData</span><span class="p">:</span> <span class="dl">'</span><span class="s1">someData</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">myStuff</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">stuffProp</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Or to (regular, ES5 and before, notation):</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="p">{</span>
+    <span class="na">props</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">stuffProp</span><span class="dl">'</span><span class="p">],</span>
+    <span class="na">data</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>                           <span class="c1">// &lt;== changed this line</span>
+     <span class="k">return</span> <span class="p">{</span>
+        <span class="na">myData</span><span class="p">:</span> <span class="dl">'</span><span class="s1">someData</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">myStuff</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">stuffProp</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Reason</p>
+
+<p>Donâ€™t use arrow functions (() =&gt; {}) when declaring Vue methods. They pick up the this from the current scope (possibly window), and will not reflect the Vue instance.</p>
+
+<p>From the <a href="https://vuejs.org/v2/api/#data">API Docs</a>:</p>
+
+<blockquote>
+  <p>Note that you should not use an arrow function with the data &gt;property (e.g. data: () =&gt; { return { a: this.myProp }}). The &gt;reason is arrow functions bind the parent context, so this will not &gt;be the Vue instance as you expect and this.myProp will be undefined.</p>
+</blockquote>
+
+:ET
