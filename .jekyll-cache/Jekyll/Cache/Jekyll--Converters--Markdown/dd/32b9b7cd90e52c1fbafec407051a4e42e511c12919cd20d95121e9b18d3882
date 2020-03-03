@@ -1,8 +1,10 @@
-I"�<blockquote>
+I"�<blockquote>
   <p>xaxis</p>
 </blockquote>
 
-<p>x축 레이블 지정과 y축 레이블 지정</p>
+<ol>
+  <li>x축 레이블 지정과 y축 레이블 지정</li>
+</ol>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">xaxis</span><span class="p">:</span> <span class="p">{</span>
         <span class="nl">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">,</span>

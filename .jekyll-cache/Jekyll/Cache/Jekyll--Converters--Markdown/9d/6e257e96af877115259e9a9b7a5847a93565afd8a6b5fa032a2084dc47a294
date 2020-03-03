@@ -1,4 +1,17 @@
-I"�<h1 id="apply">apply</h1>
+I"�<h1 id="apply">apply</h1>
+<h5 id="invoke-a-function-as-a-method-of-an-object">invoke a function as a method of an object</h5>
+
+<p>이 함수는 함수형 오브젝트를 파라메터로 주어진 오브젝트의 메서드로 적용한다는 뜻으로 이해하면 될 것 같습니다.
+만약 주어진 오브젝트가 null 일 경우, this는 global object를 지칭하게 됩니다.</p>
+
+<h4 id="synopsis">Synopsis</h4>
+
+<p>function.apply(thisobj, args)</p>
+
+<h4 id="arguments">Arguments</h4>
+<p><code class="highlighter-rouge">thisobj</code></p>
+
+<p>The object to which function is to be applied. In the body of the function, thisobj becomes the value of the <code class="highlighter-rouge">this</code> keyword. If this argument is <code class="highlighter-rouge">null</code>, the global object is used.</p>
 
 <p>The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).</p>
 
