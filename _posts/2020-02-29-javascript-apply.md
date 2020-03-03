@@ -6,7 +6,20 @@ tags: [javascript, syntax, apply]
 ---
 
 # apply
+##### invoke a function as a method of an object
 
+이 함수는 함수형 오브젝트를 파라메터로 주어진 오브젝트의 메서드로 적용한다는 뜻으로 이해하면 될 것 같습니다.
+만약 주어진 오브젝트가 null 일 경우, this는 global object를 지칭하게 됩니다.
+
+
+#### Synopsis
+
+function.apply(thisobj, args)
+
+#### Arguments
+`thisobj`
+
+The object to which function is to be applied. In the body of the function, thisobj becomes the value of the `this` keyword. If this argument is `null`, the global object is used.
 
 The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).
 
@@ -26,6 +39,7 @@ var person1 = {
 }
 person.fullName.apply(person1);  // Will return "Mary Doe"
 ```
+
 
 먼저 apply 함수를 살펴보면,
 이 함수는 한 오브젝트에서 정의한 함수형 오브젝트를 다른 오브젝트에 대해서 사용할 수 있도록 한다.
