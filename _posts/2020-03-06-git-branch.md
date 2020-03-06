@@ -19,3 +19,7 @@ To https://github.com/wenry55/wenry55.github.io
  - [deleted]         wenry55-patch-1
 
 ```
+
+##### 다른 브랜치를 가져와서 머지하기
+
+##### 현재 브랜치를 다른 브랜치에 머지하기
