@@ -64,5 +64,49 @@ git rebase는 현재의 HEAD가 가리키는 커밋을 다른 커밋으로 변�
 ![rebase](https://wac-cdn.atlassian.com/dam/jcr:e4a40899-636b-4988-9774-eaa8a440575b/02.svg?cdnVersion=861)
 
 
+`git rebase -i HEAD~3`
+
+위의 명령은 현재 브랜치의 HEAD의 위치를 변경시킵니다. git reset와 어느정도 비슷한 면이 있네요. 이 명령을 수행하였을 때는 rebase 대상 커밋 이후에 3개의 orphan commit 이 생기게 됩니다. 이 orphan commit 을 유지하려면 pick, 하나로 합치려면 squash 를 합니다.
+
+
+```bash
+$ git log --oneline
+6c316a5 (HEAD -> master) .
+9bc63a8 v3
+5a2c182 v2
+c3f6f80 v1
+
+$ git rebase -i HEAD~2  # 모두 drop을 선택하였을 경우.
+Successfully rebased and updated refs/heads/master.
+
+$ git log --oneline
+5a2c182 (HEAD -> master) v2
+c3f6f80 v1
+```
+
+```bash
+$ git log --oneline
+0abb1d3 (HEAD -> master) v5
+16f317c v4
+7cca5bf v3
+5a2c182 v2
+c3f6f80 v1
+
+$ git rebase -i HEAD~3  # v3를 pick, v4, v5는 squash
+[detached HEAD 9a50836] v3
+ Date: Fri Mar 6 22:09:25 2020 +0900
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 v3.txt
+ create mode 100644 v4.txt
+ create mode 100644 v5.txt
+Successfully rebased and updated refs/heads/master.
+
+$ git log --oneline
+9a50836 (HEAD -> master) v3
+5a2c182 v2
+c3f6f80 v1
+ 
+
+
 참고) 
 [Git Reset](/git-reset)
