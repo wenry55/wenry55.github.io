@@ -18,4 +18,15 @@ $ git push origin --delete wenry55-patch-1  # push with --delete option
 To https://github.com/wenry55/wenry55.github.io
  - [deleted]         wenry55-patch-1
 
+
 ```
+
+##### 다른 브랜치를 가져와서 머지하기
+(from master)  
+
+`git merge develop`
+
+
+##### 현재 브랜치를 다른 브랜치에 머지하기
+아... 기억이 안난다. ㅋ
+
