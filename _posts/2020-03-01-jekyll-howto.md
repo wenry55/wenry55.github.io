@@ -2,7 +2,8 @@
 title: "지킬 사용하기"
 layout: default
 tags: [jekyll, howto]
-categories: [howto, tech, markdown ]
+categories: [jekyll, howto, tech, markdown ]
+date: 2020-03-01
 ---
 
 
@@ -42,3 +43,9 @@ front matter에 추가하였으나 나타나지 않거나, 페이지가 보이�
 포스트는 _posts, 그러므로 페이지는 _pages가 아닐까요? 
 
 
+
+### jekyll plugins
+
+[jekyll-archives](https://github.com/jekyll/jekyll-archives) 를 설치하면 categories 페이지와 tag 페이지가 자동생성된다.
+
+생성된 페이지는 

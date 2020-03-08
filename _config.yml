@@ -1,9 +1,19 @@
 title: BNJ 
-description: log from bk, not to re-study.
+description: log from bk.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
 permalink: /:categories/:title/
+
+jekyll-archives:
+  enabled: all
+  layout: default
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Roboto Slab', 'Nanum Gothic', Helvetica, Arial, sans-serif"
@@ -17,3 +27,7 @@ google_fonts:        Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
+
+url: "https://wenry55.github.io" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
