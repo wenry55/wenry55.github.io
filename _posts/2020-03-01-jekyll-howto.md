@@ -46,6 +46,8 @@ front matter에 추가하였으나 나타나지 않거나, 페이지가 보이�
 
 ### jekyll plugins
 
-[jekyll-archives](https://github.com/jekyll/jekyll-archives) 를 설치하면 categories 페이지와 tag 페이지가 자동생성된다.
+[jekyll-archives](https://github.com/jekyll/jekyll-archives) 를 설치하면 categories 페이지와 tag 페이지가 자동생성 됩니다. 생성된 페이지는 /categories, /tags를 통해 접근가능합니다.
 
-생성된 페이지는 
+
+### Jekyll Theme 바꾸기
+
