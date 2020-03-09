@@ -16,10 +16,10 @@ jekyll-archives:
     category: '/category/:name/'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'Roboto Slab', 'Nanum Gothic', Helvetica, Arial, sans-serif"
+font_heading:        "'Roboto Slab', 'Nanum Gothic Coding', Helvetica, Arial, sans-serif"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'Noto Sans', 'Nanum Gothic', Helvetica, Arial, sans-serif"
+font:                "'Noto Sans', 'Nanum Gothic Coding', Helvetica, Arial, sans-serif"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/

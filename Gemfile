@@ -13,3 +13,6 @@ group :jekyll_plugins do
     gem "jekyll-toc"
     gem "jekyll-youtube"
   end
+
+gem "jekyll-theme-cayman"
+gem "sprockets", "~> 3.7"
