@@ -2,7 +2,7 @@ title: BNJ
 description: log from bk.
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 permalink: /:categories/:title/
 
 jekyll-archives:
