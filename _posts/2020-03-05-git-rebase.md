@@ -7,7 +7,11 @@ tags: [git, rebase]
 
 # Git Rebase
 ### Abstract
+
+git rebase 현재 브랜치의 HEAD를 `1) 과거의 다른 커밋` 또는 `2) 다른 브랜치의 HEAD`로 옮길 수 있게 도움을 주는 명령어 입니다. 위 두 경우 각각에 따라 약간 다른 동작이라고 생각하기 쉬운데, 사실은 같은 오퍼레이션 입니다. git-rebase명령의 동작은 우선 현재의 헤드를 다른 commit ref로 옮기고, 해당 커밋 이후의 커밋들은 pick/squash/drop 등의 지정을 통해 정리를 한다는 측면에서 동일합니다.  
+
 git merge / git rebase 두 명령은 모두 branch를 merge 합니다.
+
 하지만 git merge는 새롭게 "merge commit" 을 history상에 생성하는데 반해, rebase는 merge 하려는 브랜치의 커밋들을 로컬로 다 가져오고, 브랜치의 마지막 커밋에 현재 브랜치의 HEAD pointer를 위치시킨다는 점이 틀립니다. 
 
 다른 시각으로 보면 현재 시점의 master로 부터 새롭게 fork 하는 것과 다를 바 없습니다.
